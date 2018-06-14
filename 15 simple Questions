@@ -1,0 +1,149 @@
+100+ Python challenging programming exercises
+
+1) Python Program to Calculate the Average of Numbers in a Given List.
+2) Python Program to Exchange the Values of Two Numbers Without Using a Temporary Variable.
+3) Python Program to Read a Mumber n and Compute n+nn+nnn.
+
+4) Python Program to Check Whether a Number is Positive or Negative.
+ANs) 
+#whether number is (+) or (-)
+num=int(input())
+if num >= 0:
+    print ("positive")
+else:
+    print ("negative")
+=========================================================================
+=========================================================================
+
+5) Python Program to Take in the Marks of 5 Subjects and Display the Grade.
+Ans) 
+num=input().split(',')
+marks=map(int,num)
+total=sum(marks)
+percent=(total*100)/500
+if percent >= 90:
+    print ('A')
+elif (90 > percent > 80 ):
+    print ('B')
+elif (80 > percent > 65):
+    print ('C')
+elif (65 > percent > 33):
+    print ('D')
+else:
+    print (D)
+=========================================================================
+=========================================================================
+
+6) Print all Numbers in a Range Divisible by a Given Number
+Ans) 
+num=int(input('Input number:'))
+for x in range(0, 10):
+    if (x % num == 0):
+        print (x)
+=========================================================================
+=========================================================================
+
+7) Print all Numbers in a Range Divisible by a Given Number
+Ans) num1=int(input("input num1: "))
+num2=int(input("input num2: "))
+remainder= num1%num2
+quotient = num1 // num2
+print ('Remainder: ',remainder)
+print ('Quotient:',quotient)
+=========================================================================
+=========================================================================
+
+8) Accept Three Digits and Print all Possible Combinations from the Digits
+ANs) 
+num1=int(input("num 1: "))
+num2=int(input("num 2: "))
+num3=int(input("num 3: "))
+ls=[]
+ls.append(num1)
+ls.append(num2)
+ls.append(num3)
+for a in range(0, 3):
+    for b in range(0, 3):
+        for c in range(0, 3):
+            if (a != b & b != c & c != a):
+                print (ls[a], ls[b], ls[c])
+
+=========================================================================
+=========================================================================
+
+9)  Print Odd Numbers Within a Given Range
+Ans) 
+ls=[]
+for x in range(0, 100):
+    if x % 2 != 0:
+        ls.append(x)
+print (ls)
+=========================================================================
+=========================================================================
+
+10) Find the Sum of Digits in a Number
+Ans)
+num=input()
+sum=0
+for i in range(0, len(num)):
+    sum+=int(num[i])
+print (sum)
+=========================================================================
+=========================================================================
+
+11) Find the Smallest Divisor of an Integer
+ANs) 
+n=int(input("Enter an integer:"))
+a=[]
+for i in range(2,n+1):
+    if(n%i==0):
+        a.append(i)
+a.sort()
+print("Smallest divisor is:",a[0])
+=========================================================================
+=========================================================================
+
+12) Count the Number of Digits in a Number
+Ans) 
+num=int(input())
+sum=0
+while num>0:
+    sum+=1
+    num=num//10
+print (sum)
+=========================================================================
+=========================================================================
+
+13) Check if a Number is a Palindrome
+Ans) 
+num=input()
+num2=num[::-1]
+if num==num2:
+    print ("it is a palindrome")
+else:
+    print ("it is not palindrome")
+=========================================================================
+=========================================================================
+
+14) Print an Identity Matrix
+Ans) 
+num=int(input())
+for i in range(0, num):
+    for j in range(0, num):
+        if i==j:
+            print ('1', sep=' ', end=' ')
+        else:
+            print ('0', sep=' ', end=' ')
+    print()
+=========================================================================
+=========================================================================
+
+15) Print an Inverted Star Pattern
+Ans) 
+for i in range(n, 0, -1):
+    print ((n-i)*' '+i*'*')
+=========================================================================
+=========================================================================
+
+16)    
+    
