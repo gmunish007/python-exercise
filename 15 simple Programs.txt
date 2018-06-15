@@ -42,7 +42,8 @@ for x in range(0, 10):
 =========================================================================
 
 7) Print all Numbers in a Range Divisible by a Given Number
-Ans) num1=int(input("input num1: "))
+Ans) 
+num1=int(input("input num1: "))
 num2=int(input("input num2: "))
 remainder= num1%num2
 quotient = num1 // num2
@@ -81,10 +82,13 @@ print (ls)
 
 10) Find the Sum of Digits in a Number
 Ans)
-num=input()
+num=int(input())
+i=0
 sum=0
-for i in range(0, len(num)):
-    sum+=int(num[i])
+while num != 0:
+    i=num%10
+    sum+=i
+    num=num//10
 print (sum)
 =========================================================================
 =========================================================================
@@ -104,11 +108,11 @@ print("Smallest divisor is:",a[0])
 12) Count the Number of Digits in a Number
 Ans) 
 num=int(input())
-sum=0
+count=0
 while num>0:
-    sum+=1
+    count+=1
     num=num//10
-print (sum)
+print (count)
 =========================================================================
 =========================================================================
 
