@@ -268,4 +268,44 @@ print (count)
 =========================================================================
 =========================================================================
 
-25) 
+25) Calculate the Length of a String Without Using a Library Function
+Ans)
+st=input('input string: ,')
+count =1
+for x in st:
+    if (x==' '):
+        count +=1
+print (count)
+=========================================================================
+=========================================================================
+
+26) Calculate the Number of Upper Case Letters and Lower Case Letters in a String
+Ans) 
+num1=input('input string: ')
+count1=0
+count2=0
+for i in num1:
+    if i.islower():
+        count1+=1
+    else:
+        count2+=1
+print ('Lowercase: ',count1)
+print ('uppercase: ',count2)
+=========================================================================
+=========================================================================
+
+27) calculate the number of digits and letters in a string
+Ans)
+val=input('Input string: ')
+count1 =0
+count2=0
+for i in val:
+    if i.isdigit():
+        count1+=1
+    else:
+        count2+=1
+print ('digits: ', count1)
+print ('Letters: ', count2)
+=========================================================================
+=========================================================================
+
